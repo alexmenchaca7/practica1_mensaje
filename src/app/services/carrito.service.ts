@@ -37,7 +37,8 @@ export class CarritoService{
             xml += `    </producto>\n`;
         });
         xml += `  <subtotal>$${subtotal}</subtotal>\n`;
-        xml += `  <total>$${total}</total>\n`;
+        xml += `  <iva>$${iva.toFixed(2)}</iva>\n`;  // Mostrar IVA con 2 decimales
+        xml += `  <total>$${total.toFixed(2)}</total>\n`;  // Mostrar total con 2 decimales
         xml += `</recibo>`;
 
         return xml;

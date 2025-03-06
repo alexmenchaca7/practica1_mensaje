@@ -18,6 +18,11 @@
                     <span>Subtotal: </span>
                     <span>${{ calcularSubtotal() }} MXN</span>
                 </div>
+
+                <div class="iva">
+                    <span>IVA (16%): </span>
+                    <span>${{ calcularIVA() | number: '1.2-2' }} MXN</span> 
+                </div>
                 
                 <div class="total">
                     <span>Total: </span>

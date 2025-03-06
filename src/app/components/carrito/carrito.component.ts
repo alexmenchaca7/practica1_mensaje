@@ -45,9 +45,15 @@ export class CarritoComponent {
       return this.carrito.reduce((subtotal, producto) => subtotal + producto.precio, 0);
   }
 
+  calcularIVA() {
+      const subtotal = this.calcularSubtotal();
+      return subtotal * 0.16; // IVA del 16%
+  }
+
   calcularTotal() {
       const subtotal = this.calcularSubtotal();
-      const iva = subtotal * 0.16; // IVA del 16%
+      const iva = this.calcularIVA();
       return subtotal + iva;
   }
+
 }
