@@ -8,5 +8,5 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./app.component.css'] // Cambiado a styleUrls
 })
 export class AppComponent {
-  title = 'mi-proyecto';
+  title = 'practica1_mensaje';
 }
